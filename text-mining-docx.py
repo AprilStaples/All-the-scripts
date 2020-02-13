@@ -9,7 +9,7 @@ import collections
 
 
 #cleaned up doc file
-docx = zipfile.ZipFile('Focus Group II.docx')
+docx = zipfile.ZipFile('Your Document.docx')
 content = docx.read('word/document.xml').decode('utf-8')
 cleaned = re.sub('<(.|\n)*?>','',content)
 
