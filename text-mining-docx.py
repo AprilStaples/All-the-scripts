@@ -35,4 +35,8 @@ qep = [word for word in tokenized_word if word not in stop_words]
 from nltk.util import ngrams
 esBigrams = ngrams(qep, 1)
 esBigramFreq = collections.Counter(esBigrams)
-esBigramFreq.most_common(100)
+
+#results
+results = esBigramFreq.most_common(100)
+print(results)
+
